@@ -6,7 +6,7 @@ from rest_framework import status
 
 
 class UsuarioList(APIView):
-    permission_classes = [AllowAny]
+    permission_classes =[AllowAny]    
     def post(self, request, format=None):
         serializer = usuario_serializer.UsuarioSerializer(data=request.data)
         if serializer.is_valid():

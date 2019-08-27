@@ -132,12 +132,12 @@ REST_FRAMEWORK = {
        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
    ),
 
-    # 'DEFAULT_PERMISSION_CLASSES': (
-    #     'rest_framework.permissions.IsAuthenticated',
-    # )
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
 }
 
-#OAUTH2_PROVIDER = {
-#    'ACCESS_TOKEN_EXPIRE_SECONDS': 60,
-#    'OAUTH2_BACKEND_CLASS': 'oauth2_provider.oauth2_backends.JSONOAuthLibCore'
-#}
+OAUTH2_PROVIDER = {
+    'ACCESS_TOKEN_EXPIRE_SECONDS': 60,
+    'OAUTH2_BACKEND_CLASS': 'oauth2_provider.oauth2_backends.JSONOAuthLibCore'
+}
